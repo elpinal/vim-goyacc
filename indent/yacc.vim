@@ -35,6 +35,7 @@ endif
 
 setlocal autoindent
 
+setlocal noexpandtab
 setlocal tabstop<
 setlocal shiftwidth=8
 
@@ -54,6 +55,7 @@ endfunction
 
 let b:undo_indent = 'setlocal '.join([
       \   'autoindent<',
+      \   'expandtab<',
       \   'indentexpr<',
       \   'indentkeys<',
       \   'shiftwidth<',
